@@ -1,0 +1,31 @@
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+
+
+int  main()
+{
+
+	int Array[5][5];
+	int Res;
+
+	for(int i=0;i<5;i++)
+	{
+		for(int j=0;j<5;j++)
+		{
+			cin>>Array[i][j];
+			if(Array[i][j]==1)
+			{
+				 Res=(abs(i-2)+abs(j-2));
+			}
+		}
+	
+	}
+
+	cout<<Res;
+	
+	return 0;
+
+
+}
