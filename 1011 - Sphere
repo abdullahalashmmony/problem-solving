@@ -1,0 +1,16 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+
+    double R,VOLUME;
+    const double PI=3.14159;
+    cin >> R ;
+    VOLUME =  4.0/3 * PI * R*R*R;
+    cout << fixed << setprecision(3) <<"VOLUME = "<< VOLUME << endl;
+
+    return 0;
+}
