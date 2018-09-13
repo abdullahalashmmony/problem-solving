@@ -1,0 +1,17 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+    int id1,id2,num1,num2;
+    float price1,price2;
+
+    while(cin>>id1>>num1>>price1)
+    {
+
+        cin>>id2>>num2>>price2;
+
+        cout<< "VALOR A PAGAR: R$ "<<fixed<<setprecision(2)<<num1*price1+num2*price2<<endl;
+
+    }
