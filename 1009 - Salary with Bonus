@@ -1,0 +1,18 @@
+#include <iostream>
+#include <iomanip>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    double a,b,res;
+    string c;
+    cin>>c;
+    cin>>a>>b;
+    res = a+(b*15)/100;
+    cout<<"TOTAL = R$ "<<fixed<< setprecision(2)<<res<<endl;
+
+
+    return 0;
+}
