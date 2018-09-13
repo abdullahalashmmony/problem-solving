@@ -1,0 +1,43 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int n ;
+cin>>n;
+
+int value[n] ;
+for(int i=0 ;i < n ; i++){
+    cin>>value[i];
+
+}
+
+int p=0 , q=n-1,max , k=0;
+int player1=0 ,player2=0;
+
+
+while (p<=q){
+    if(value[p]>=value[q])
+        {
+           max=value[p];
+        p++;
+        }
+        else{
+            max=value[q];
+            q--;
+        }
+        if(k%2==0)
+          player1=player1+max;
+        else
+          player2=player2+max;
+     k++;
+
+}
+
+cout<<player1 <<" "<< player2 ;
+
+
+
+    return 0;
+}
