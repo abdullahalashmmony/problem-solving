@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+  double a,b,c,mx;
+  while (cin>>a>>b>>c)
+{
+ mx = (a+b+abs(a-b))/2;
+ mx = (mx + c+abs(mx-c))/2;
+cout<<mx<<" eh o maior\n";
+}
+    return 0;
+}
