@@ -1,0 +1,32 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+   const double PI =3.14159;
+   float A,B,C ,area_triangle ,area_Square,area_rectangle ,area_circle ,area_trapezium;
+   cin>>A>>B>>C;
+   area_triangle = 1.0/2*A*C;
+   area_Square = B*B;
+   area_rectangle = A*B;
+   area_circle = PI*C*C;
+   area_trapezium = ((A+B)/2)*C;
+
+   cout<<"TRIANGULO: "<<fixed<<setprecision(3)<<area_triangle<<endl;
+   cout<<"CIRCULO: "<<fixed<<setprecision(3)<<area_circle<<endl;
+   cout<<"TRAPEZIO: "<<fixed<<setprecision(3)<<area_trapezium<<endl;
+   cout<<"QUADRADO: "<<fixed<<setprecision(3)<<area_Square<<endl;
+   cout<<"RETANGULO: "<<fixed<<setprecision(3)<<area_rectangle<<endl;
+
+
+
+
+
+
+
+
+
+    return 0;
+}
