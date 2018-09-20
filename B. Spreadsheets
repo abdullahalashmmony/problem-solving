@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int testCase;
+cin>>testCase;
+  for(int i =0 ; i < testCase ; i++){
+        int s;
+
+        cin >> s;
+
+       if (s==i)
+       {
+           cout<<s;
+
+              }
+
+        else {
+
+            cout<<"null";
+        }
+
+}
+
+    return 0;
+}
