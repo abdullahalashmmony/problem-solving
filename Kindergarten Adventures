@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std ;
+
+
+struct Node {
+int x;
+Node * next;
+
+};
+Node *head= NULL;
+
+void InsertNode(int value)
+{
+    Node *temp=new Node;
+
+    temp->x=value;
+    temp->next=head;
+
+    head=temp;
+
+}
+
+
+int main (){
+    int n;
+    cin>>n;
+            int time[n];
+            int element=0 ;
+            int index;
+    for(int i=1 ; i<=n ; i++){
+
+        InsertNode(i);
+            cin>>time[i];
+    }
+
+    for(int i=1 ; i<= n ; i++){
+        if(element == time[i])
+           {
+               index =i;
+
+            cout<<index;;
+            break;
+           }
+        }
+return 0;
+}
