@@ -1,0 +1,32 @@
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    float medals;
+    float cups;
+    float ans;
+int n;
+int temp;
+for(int i= 0 ; i < 3 ; ++i )
+{
+    cin>> temp ;
+    cups  = temp ;
+
+}
+
+for ( int i = 0 ; i< 3 ; ++i )
+{
+
+     cin >> temp ;
+
+     medals  = temp;
+}
+cin>>n;
+ans = ceil (medals / 10 ) + ceil (cups / 5);
+ans > n ? "NO" : "YES";
+
+    return 0;
+}
